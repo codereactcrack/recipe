@@ -1,0 +1,123 @@
+/* Global Styles */
+.app-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  .header {
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Bar Styles */
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Recipe Container */
+  .recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Recipe Card Styles */
+  .recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .recipe-title {
+    font-size: 22px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-cuisine, .recipe-calories, .recipe-type, .recipe-source {
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 5px;
+  }
+  
+  .recipe-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .recipe-ingredients ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recipe-ingredients li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .recipe-source {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .search-input {
+      width: 90%;
+    }
+  
+    .recipe-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .search-button {
+      width: 90%;
+    }
+  }
+  
